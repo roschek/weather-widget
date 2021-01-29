@@ -1500,12 +1500,12 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"62bc9cd8-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VueWebComponent.vue?vue&type=template&id=0e27ee69&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"62bc9cd8-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VueWebComponent.vue?vue&type=template&id=46529521&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('h1',[_vm._v("Виджет погоды")]),_c('img',{staticClass:"widget__gear",attrs:{"src":__webpack_require__("ca7f"),"alt":"gear"},on:{"click":_vm.changeCityHandler}}),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.searchCity),expression:"searchCity"}]},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.city),expression:"city"}],staticClass:"widget__input",attrs:{"type":"text","placeholder":"введите название города"},domProps:{"value":(_vm.city)},on:{"input":function($event){if($event.target.composing){ return; }_vm.city=$event.target.value}}}),_c('button',{staticClass:"widget__button",on:{"click":function($event){return _vm.seekWeather(_vm.city,_vm.API_KEY,_vm.baseURL)}}},[_vm._v("Узнать погоду")])]),_c('div',{staticClass:"card"},[_c('p',[_vm._v("погода в городе "+_vm._s(_vm.seekCity))]),_c('p',[_vm._v("температура "+_vm._s(_vm.temperature)+"° С")]),_c('p',[_vm._v("ощущается как "+_vm._s(_vm.tempFeel)+" С")])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/VueWebComponent.vue?vue&type=template&id=0e27ee69&
+// CONCATENATED MODULE: ./src/components/VueWebComponent.vue?vue&type=template&id=46529521&
 
 // EXTERNAL MODULE: ./node_modules/axios/index.js
 var axios = __webpack_require__("bc3a");
@@ -1548,7 +1548,6 @@ var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
     seekWeather(city, key, url) {
       axios_default.a.get(`https://${url}weather?q=${city}&units=metric&lang=ru&appid=${key}`).then(res => res.data).then(data => {
         this.setData(data);
-        this.forceRender();
         this.city = '';
       }).catch(err => {
         console.log(err);
