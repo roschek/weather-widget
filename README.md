@@ -1,5 +1,5 @@
 # <h1>Виджет показа погоды</h1></br>
-Реализован выбор города, показ погоды, встраивание на сайт </br>
+Реализован выбор города на английском языке, показ погоды, встраивание на сайт </br>
 Для установки на сайт, добавить строки:</br>
 "<script src="https://unpkg.com/vue"></script></br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.2.0/webcomponents-loader.js"></script></br>
